@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <!-- Navbar Desktop -->
+    <nav class="navbar">
+      <ul>
+        <a href="#">
+          <img class="logo" src="/images/logo.svg" alt="" />
+        </a>
+        <li class="gen-list features">
+          <a href="#"
+            >Features<img src="images/icon-arrow-down.svg" alt=""
+          /></a>
+          <div class="drop-down drop-down-1">
+            <a href="#"><img src="images/icon-todo.svg" alt="" /> Todo List</a>
+            <a href="#"
+              ><img src="images/icon-calendar.svg" alt="" /> Calendar</a
+            >
+            <a href="#"
+              ><img src="images/icon-reminders.svg" alt="" /> Reminders</a
+            >
+            <a href="#"
+              ><img src="images/icon-planning.svg" alt="" /> Planning</a
+            >
+          </div>
+        </li>
+        <li class="gen-list company">
+          <a href="#">Company<img src="images/icon-arrow-down.svg" alt="" /></a>
+          <div class="drop-down drop-down-2">
+            <a href="#">History</a>
+            <a href="#">Our Team</a>
+            <a href="#">Blog</a>
+          </div>
+        </li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Login</a></li>
+        <li class="register"><a href="#">Register</a></li>
+      </ul>
+    </nav>
+
+    <!-- Navbar Mobile -->
+    <nav class="navbar-mobile">
+      <ul class="logo-hamburger">
+        <li>
+          <a href="#">
+            <img class="logo" src="/images/logo.svg" alt="" />
+          </a>
+        </li>
+        <li>
+          <a href="#" onclick="openNav()"
+            ><img src="images/icon-menu.svg" alt=""
+          /></a>
+        </li>
+      </ul>
+      <div class="sidebar" id="sidebar">
+        <div class="container">
+          <ul>
+            <a href="#" class="sidebar-close" onclick="closeNav()"
+              ><img src="images/icon-close-menu.svg" alt=""
+            /></a>
+            <li
+              class="features-mobile"
+              onclick="toggleFirstAccordion();turnArrowOne();"
+            >
+              <a href="#">
+                Features
+                <img class="arrow-down" src="images/icon-arrow-down.svg" alt=""
+              /></a>
+            </li>
+            <div class="accordion-1" id="accordion-1">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><img src="images/icon-todo.svg" alt="" /> Todo List</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="images/icon-calendar.svg" alt="" /> Calendar</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="images/icon-reminders.svg" alt="" /> Reminders</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><img src="images/icon-planning.svg" alt="" /> Planning</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <li
+              class="company-mobile"
+              onclick="toggleSecondAccordion();turnArrowTwo();"
+            >
+              <a href="#"
+                >Company <img src="images/icon-arrow-down.svg" alt=""
+              /></a>
+            </li>
+            <div class="accordion-2" id="accordion-2">
+              <ul>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </div>
+            <li>Careers</li>
+            <li>About</li>
+          </ul>
+          <div class="buttons">
+            <button class="login-mobile">Login</button>
+            <button class="register-mobile">Register</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Section Hero -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-text">
+          <h1>Make <br />remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <a href="#">Learn more</a>
+          <div class="clients">
+            <img src="images/client-databiz.svg" alt="" />
+            <img src="images/client-audiophile.svg" alt="" />
+            <img src="images/client-meet.svg" alt="" />
+            <img src="images/client-maker.svg" alt="" />
+          </div>
+        </div>
+        <div class="hero-img">
+          <img src="images/image-hero-desktop.png" alt="" />
+        </div>
+        <div class="hero-img-mobile">
+          <img src="images/image-hero-mobile.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
