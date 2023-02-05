@@ -196,7 +196,6 @@ br {
 
 .navbar-mobile .sidebar .container ul .features-mobile.active a img,
 .navbar-mobile .sidebar .container ul .company-mobile.active a img {
-  /* display: block; */
   transform: rotate(180deg);
   margin-left: 1rem;
 }
@@ -376,15 +375,6 @@ br {
   .navbar ul li:hover a img {
     transform: rotate(180deg);
   }
-
-  /* .navbar ul li a i {
-    padding: 0 10px;
-    transition: 0.2s;
-  }
-
-  .navbar ul li:hover a i {
-    transform: rotate(180deg);
-  } */
 
   .navbar ul .gen-list .drop-down {
     display: none;
